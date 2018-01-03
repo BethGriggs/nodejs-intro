@@ -5,15 +5,24 @@ class: center, middle
 
 ---
 
-# Agenda
+# Introduction
 
-1. Introduction
-2. Non-blocking I/O
-3. Scoping
+- Node.js Beginners course
+- 4 weeks
+- Recap basic JavaScript and then focus on Node.js specifically
+- Basics of frameworks Express
 
 ---
 
-# Introduction
+# Agenda
+
+1. Prerequisites
+2. What is Node.js and NPM?
+3. Using NodeSchool.io
+4. JavaScript tutorial
+5. Non-blocking Model
+6. Node.js tutorial
+
 
 ---
 
@@ -67,27 +76,30 @@ class: center, middle
 
 - NodeSchool is community driven open source provider of workshops to teach web software skills.
 - `npm install --global javascripting  # npm i -g javascripting`
-- Provides an interactive interface to help learn.
+- Provides an interactive interface learn
 - 'INTRODUCTION' activity
----
+
 ---
 
-# JavaScript recap exercises
+# JavaScript recap
 - String length
 - Rounding numbers
 - If Statement
-- For Loop
+- For loop
 - Objects
 - Function Arguments
+
 ---
 
 # Non-blocking model
 
 - Node.js features a non-blocking algorithm.
 - JavaScript is built around events.  
+
 ---
 
-# learnyounode exercises
+# Node.js exercises
+- `npm i -g learnyounode`
 - Baby Steps
 
 ---

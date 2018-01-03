@@ -32,6 +32,8 @@ class: center, middle
 - Editor of some kind (atom / VSCode / Vim)
 - Confirm with `node --version`, `npm --version`
 
+---
+
 # What is Node.js?
 
 - Cross-platform JavaScript runtime environment for executing server-side JavaScript.

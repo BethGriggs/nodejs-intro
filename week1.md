@@ -7,10 +7,10 @@ class: center, middle
 
 # Introduction
 
-- Node.js Beginners course
-- 4 weeks
-- Recap basic JavaScript and then focus on Node.js specifically
-- Basics of frameworks Express
+ - Week 1: Basic JavaScript & Introduction to Node.js
+ - Week 2: Basics of Express
+ - Week 3: Debuggger and Inspector
+ - Week 4: ??
 
 ---
 

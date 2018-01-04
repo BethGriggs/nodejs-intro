@@ -19,9 +19,9 @@ class: center, middle
 1. Prerequisites
 2. What is Node.js and NPM?
 3. Using NodeSchool.io
-4. JavaScript tutorial
+4. JavaScript tutorials
 5. Non-blocking Model
-6. Node.js tutorial
+6. Node.js tutorials
 
 
 ---
@@ -37,7 +37,7 @@ class: center, middle
 # What is Node.js?
 
 - Cross-platform JavaScript runtime environment for executing server-side JavaScript.
-- Open-source
+- Open-source (Github)
 - They took Google Chromes V8 Engine and allowed it to run on your computer.
 - Allows you to read files/http requests/access databases directly, providing abilities similar to PHP/Ruby.  
 
@@ -47,7 +47,7 @@ class: center, middle
 
 - Web Servers
 - Chatbots
-- <help>
+- Anything not CPU intensive (e.g. fibonacci sequence)
 
 ---
 # Who uses Node.js?
@@ -80,7 +80,7 @@ class: center, middle
 - `npm install --global javascripting  # npm i -g javascripting`
 - Provides an interactive interface learn
 - 'INTRODUCTION' activity
-
+- javascripting
 ---
 
 # JavaScript recap

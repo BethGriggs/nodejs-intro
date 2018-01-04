@@ -8,9 +8,9 @@ class: center, middle
 # Introduction
 
  - Week 1: Basic JavaScript & Introduction to Node.js
- - Week 2: Basics of Express
- - Week 3: Debuggger and Inspector
- - Week 4: ??
+ - Week 2: Callbacks, promises, async await
+ - Week 3: Modules and Express
+ - Week 4: Debugging Node.js applications
 
 ---
 

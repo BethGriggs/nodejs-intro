@@ -28,7 +28,9 @@ class: center, middle
 
 # Prerequisites
 
-- Installed Node.js (preferably the latest Node8)
+- Installed Node.js (preferably the latest Node8) from either:
+ - https://nodejs.org/en/
+ - https://github.com/creationix/nvm
 - Editor of some kind (atom / VSCode / Vim)
 - Confirm with `node --version`, `npm --version`
 

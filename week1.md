@@ -23,7 +23,6 @@ class: center, middle
 5. Non-blocking Model
 6. Node.js tutorials
 
-
 ---
 
 # Prerequisites
@@ -103,7 +102,10 @@ class: center, middle
 ---
 
 # Node.js exercises
+
 - `npm i -g learnyounode`
 - Baby Steps
+- My first I/O
+- My first Async I/O
 
 ---

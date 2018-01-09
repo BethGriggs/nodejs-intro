@@ -20,7 +20,7 @@ class: center, middle
 2. What is Node.js and NPM?
 3. Using NodeSchool.io
 4. JavaScript tutorials
-5. Non-blocking Model
+5. Blocking vs non-blocking
 6. Node.js tutorials
 
 ---
@@ -28,12 +28,14 @@ class: center, middle
 # Prerequisites/Installation
 
 - Install Node.js (preferably the latest Node 8):
- - Install a single version of Node.js from https://nodejs.org/en/
+ - Install a single version of Node.js from https://nodejs.org/en/.
  - Install a Node Version manager (if you want to be able to switch between Node versions).
    - UNIX: https://github.com/creationix/nvm
    - Cross-platform: https://github.com/jasongin/nvs
 - Editor of some kind (atom / VSCode / Vim).
 - Confirm by typing `node --version`, `npm --version` in terminal.
+
+
 
 Note: On Linux you should install to `/usr/local/bin` so that `node` and `npm` are in your `$PATH`.
 
@@ -50,8 +52,8 @@ Note: On Linux you should install to `/usr/local/bin` so that `node` and `npm` a
 
 # What is Node.js used for?
 
-- REST APIs and Backend Applications
-- Real-Time services (Chat, Games etc)
+- REST APIs and Backend Applications.
+- Real-Time services (Chat, Games etc).
 - Blogs, CMS, Social Applications.
 - Command Line Utilities and Tools.
 - Anything that is not CPU intensive (e.g. Fibonacci sequence algorithm).
@@ -78,8 +80,8 @@ Note: On Linux you should install to `/usr/local/bin` so that `node` and `npm` a
 # What is NPM?
 
 - npm is the default package manager for JavaScript.
-- Worlds largest software registry - approx 600K packages and 6bn downloads a week
-- npm allows you to install reusable packages as dependencies to your application
+- Worlds largest software registry - approx 600K packages and 6bn downloads a week.
+- npm allows you to install reusable packages as dependencies to your application.
 - No vetting process - potential to use malicious/untrusted/unmaintained packages.
 ---
 
@@ -87,9 +89,10 @@ Note: On Linux you should install to `/usr/local/bin` so that `node` and `npm` a
 
 - NodeSchool is community driven open source provider of workshops to teach web software skills.
 - `npm install --global javascripting  # npm i -g javascripting`
-- Provides an interactive interface learn
-- Complete the 'INTRODUCTION' activity
-- `javascripting`
+- Provides an interactive interface learn.
+- Complete the 'INTRODUCTION' activity.
+- `javascripting` command should be available in your terminal.
+
 
 
 Note: If you hit `Error: EPERM, Operation not permitted`
@@ -98,6 +101,7 @@ Note: If you hit `Error: EPERM, Operation not permitted`
 ---
 
 # JavaScript recap
+
 - String length
 - Rounding numbers
 - If Statement

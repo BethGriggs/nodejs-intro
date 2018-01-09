@@ -8,8 +8,8 @@ class: center, middle
 # Sessions
 
  - Week 1: Basic JavaScript & Introduction to Node.js
- - Week 2: Modules and Express
- - Week 3: Callbacks, Promises, Async/Await
+ - Week 2: Modules & Express
+ - Week 3: Callbacks, Promises, & Async/Await
  - Week 4: Debugging Node.js applications
 
 ---
@@ -27,12 +27,12 @@ class: center, middle
 
 # Prerequisites/Installation
 
-- Installed Node.js (preferably the latest Node8)
+- Install Node.js (preferably the latest Node 8):
  - Install a single version of Node.js from https://nodejs.org/en/
- - Install a Node Version manager - only if you want to switch between Node versions
+ - Install a Node Version manager (if you want to be able to switch between Node versions).
    - UNIX: https://github.com/creationix/nvm
    - Cross-platform: https://github.com/jasongin/nvs
-- Editor of some kind (atom / VSCode / Vim)
+- Editor of some kind (atom / VSCode / Vim).
 - Confirm by typing `node --version`, `npm --version` in terminal.
 
 Note: On Linux you should install to `/usr/local/bin` so that `node` and `npm` are in your `$PATH`.
@@ -42,9 +42,9 @@ Note: On Linux you should install to `/usr/local/bin` so that `node` and `npm` a
 # What is Node.js?
 
 - Cross-platform JavaScript runtime environment for executing server-side JavaScript.
-- They took Google Chromes V8 Engine and allowed it to run on your computer.
-- Allows you to read files/http requests/access databases directly, providing abilities similar to PHP/Ruby.  
-- Open-source (Github: https://github.com/nodejs/node)
+- Took the Google Chrome V8 Engine and allowed it to run on your computer.
+- Allows you to read files/http requests/access databases directly - providing abilities similar to PHP/Ruby.  
+- Open-source (Github: https://github.com/nodejs/node), community driven
 
 ---
 
@@ -55,11 +55,13 @@ Note: On Linux you should install to `/usr/local/bin` so that `node` and `npm` a
 - Blogs, CMS, Social Applications.
 - Command Line Utilities and Tools.
 - Anything that is not CPU intensive (e.g. Fibonacci sequence algorithm).
-
+- Desktop Apps using [Electron](https://electronjs.org/).
 
 ---
 # Who uses Node.js?
 
+- Cisco Systems
+- General Motors
 - GoDaddy
 - Groupon
 - IBM
@@ -70,8 +72,7 @@ Note: On Linux you should install to `/usr/local/bin` so that `node` and `npm` a
 - Rakuten
 - Walmart
 - Yahoo!
-- Cisco Systems
-- General Motors
+
 ---
 
 # What is NPM?

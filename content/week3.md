@@ -1,7 +1,7 @@
 class: center, middle
 
 # Beginners Node.js
-## Week 2
+## Week 3
 
 ---
 

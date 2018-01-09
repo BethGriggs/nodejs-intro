@@ -5,18 +5,18 @@ class: center, middle
 
 ---
 
-# Introduction
+# Sessions
 
  - Week 1: Basic JavaScript & Introduction to Node.js
  - Week 2: Modules and Express
- - Week 3: Callbacks, promises, async await
+ - Week 3: Callbacks, Promises, Async/Await
  - Week 4: Debugging Node.js applications
 
 ---
 
 # Agenda
 
-1. Prerequisites
+1. Prerequisites/Installation
 2. What is Node.js and NPM?
 3. Using NodeSchool.io
 4. JavaScript tutorials
@@ -25,32 +25,37 @@ class: center, middle
 
 ---
 
-# Prerequisites
+# Prerequisites/Installation
 
-- Installed Node.js (preferably the latest Node8) from either:
+- Installed Node.js (preferably the latest Node8)
  - Install a single version of Node.js from https://nodejs.org/en/
- - Node Version manager - only if you want to switch between Node versions
-  - UNIX: https://github.com/creationix/nvm
-  - Cross-platform: https://github.com/jasongin/nvs
+ - Install a Node Version manager - only if you want to switch between Node versions
+   - UNIX: https://github.com/creationix/nvm
+   - Cross-platform: https://github.com/jasongin/nvs
 - Editor of some kind (atom / VSCode / Vim)
-- Confirm with `node --version`, `npm --version`
+- Confirm by typing `node --version`, `npm --version` in terminal.
+
+Note: On Linux you should either install to `/usr/local/bin` or add the directory you installed to to your `$PATH`.
 
 ---
 
 # What is Node.js?
 
 - Cross-platform JavaScript runtime environment for executing server-side JavaScript.
-- Open-source (Github)
 - They took Google Chromes V8 Engine and allowed it to run on your computer.
 - Allows you to read files/http requests/access databases directly, providing abilities similar to PHP/Ruby.  
+- Open-source (Github: https://github.com/nodejs/node)
 
 ---
 
 # What is Node.js used for?
 
-- Web Servers
-- Chatbots
-- Anything not CPU intensive (e.g. fibonacci sequence)
+- REST APIs and Backend Applications
+- Real-Time services (Chat, Games etc)
+- Blogs, CMS, Social Applications.
+- Command Line Utilities and Tools.
+- Anything that is not CPU intensive (e.g. Fibonacci sequence algorithm).
+
 
 ---
 # Who uses Node.js?
@@ -60,7 +65,7 @@ class: center, middle
 - IBM
 - LinkedIn
 - Microsoft
-- Netflix
+- Netflix - See conference talk: [Slaying Monoliths with Docker and Node.js](https://www.youtube.com/watch?v=H_iK7jww_j8&t=66s)
 - PayPal
 - Rakuten
 - Walmart

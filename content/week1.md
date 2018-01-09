@@ -101,10 +101,34 @@ Note: If you hit `Error: EPERM, Operation not permitted`
 
 ---
 
-# Non-blocking model
+# Blocking vs Non-blocking
 
-- Node.js features a non-blocking algorithm.
-- JavaScript is built around events.  
+- Node.js has both blocking and non-blocking calls.
+- Blocking is when execution of JS in the Node.js process must wait until a non-JavaScript operation completes. This happens because the 'event loop' is unable to continue running JS while a blocking operation is occurring.
+
+---
+
+# Blocking vs Non-blocking: Example
+
+- Synchronous:
+
+```
+var fs = require('fs');
+var data = fs.readFileSync('/file.md'); // blocks here until file is read
+console.log(data);
+// moreWork(); will run after console.log
+```
+
+- Asynchronous:
+
+```
+var fs = require('fs');
+fs.readFile('/file.md', (err, data) => {
+  if (err) throw err;
+  console.log(data);
+});
+// moreWork(); will run before console.log
+```
 
 ---
 

@@ -28,8 +28,10 @@ class: center, middle
 # Prerequisites
 
 - Installed Node.js (preferably the latest Node8) from either:
- - https://nodejs.org/en/
- - https://github.com/creationix/nvm
+ - Install a single version of Node.js from https://nodejs.org/en/
+ - Node Version manager - only if you want to switch between Node versions
+  - UNIX: https://github.com/creationix/nvm
+  - Cross-platform: https://github.com/jasongin/nvs
 - Editor of some kind (atom / VSCode / Vim)
 - Confirm with `node --version`, `npm --version`
 
@@ -102,7 +104,6 @@ class: center, middle
 ---
 
 # Node.js exercises
-
 - `npm i -g learnyounode`
 - Baby Steps
 - My first I/O

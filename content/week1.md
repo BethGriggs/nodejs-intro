@@ -8,8 +8,8 @@ class: center, middle
 # Introduction
 
  - Week 1: Basic JavaScript & Introduction to Node.js
- - Week 2: Callbacks, promises, async await
- - Week 3: Modules and Express
+ - Week 2: Modules and Express
+ - Week 3: Callbacks, promises, async await
  - Week 4: Debugging Node.js applications
 
 ---

@@ -82,15 +82,20 @@ class: center, middle
 - NodeSchool is community driven open source provider of workshops to teach web software skills.
 - `npm install --global javascripting  # npm i -g javascripting`
 - Provides an interactive interface learn
-- 'INTRODUCTION' activity
-- javascripting
+- Complete the 'INTRODUCTION' activity
+- `javascripting`
+
+
+Note: If you hit `Error: EPERM, Operation not permitted`
+ - `sudo chown -R $USER:$(id -gn) /usr/local/lib/node_modules` should fix this
+
 ---
 
 # JavaScript recap
 - String length
 - Rounding numbers
 - If Statement
-- For loop
+- For Loop
 - Objects
 - Function Arguments
 

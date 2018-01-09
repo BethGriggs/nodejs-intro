@@ -95,8 +95,7 @@ Note: On Linux you should install to `/usr/local/bin` so that `node` and `npm` a
 
 
 
-Note: If you hit `Error: EPERM, Operation not permitted`
- - `sudo chown -R $USER:$(id -gn) /usr/local/lib/node_modules` should fix this
+Note: If you hit `Error: EPERM, Operation not permitted` `sudo chown -R $USER:$(id -gn) /usr/local/lib/node_modules` should fix this
 
 ---
 

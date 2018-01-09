@@ -35,7 +35,7 @@ class: center, middle
 - Editor of some kind (atom / VSCode / Vim)
 - Confirm by typing `node --version`, `npm --version` in terminal.
 
-Note: On Linux you should either install to `/usr/local/bin` or add the directory you installed to to your `$PATH`.
+Note: On Linux you should install to `/usr/local/bin` so that `node` and `npm` are in your `$PATH`.
 
 ---
 

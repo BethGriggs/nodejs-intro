@@ -16,7 +16,7 @@ class: center, middle
 # Using Modules
 
  - JavaScript libraries;  set of functions you want to include in your application.
- - Similar to
+ -
 
 ---
 
@@ -54,5 +54,10 @@ class: center, middle
 # Express Exercises
 
 - `npm i -g expressworks`
--
+
+---
+# Express Exercises
+
+- `npm i -g expressworks`
+
 ---

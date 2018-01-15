@@ -7,7 +7,7 @@ class: center, middle
 
 # Agenda
 
-1. Node modules
+1. Using Modules
 2. Built-in Modules
 3. What is Express?
 
@@ -15,13 +15,15 @@ class: center, middle
 
 # Using Modules
 
- - JavaScript libraries;  set of functions you want to include in your application.
+ - JavaScript libraries; set of functions you want to include in your application.
+ - The module will provide an API to expose functionality.
 
 ---
 
 # Built-in Modules
 
- - Core modules are always preferentially loaded if their identifier is passed to require()
+ - Node.js provides several built-in modules, which differs between versions.  
+ - Core modules are always preferentially loaded if their identifier is passed to `require()`.
  - Includes: `os`, `assert`, `fs`
  - https://nodejs.org/docs/latest-v8.x/api/fs.html
 
@@ -30,14 +32,15 @@ class: center, middle
 # What is Express?
 
  - Node.js web and mobile application framework
- - Express builds:
+ - Express.js allows you to build:
   - Single-page, multi-page, and hybrid mobile and web apps
   - Common back-end functions for web applications
-  - APIs (application programming interfaces)
+  - Web APIs (application programming interfaces)
  - Templating engines: Jade and EJS.
- - Supports the Model-View-Controller pattern
- - Free and Open Source
- - Used in the MEAN/MERN stack
+ - Used in the MEAN/MERN stack.
+ - Supports the Model-View-Controller pattern.
+ - Free and Open Source.
+ - Owned by StrongLoop, acquired by IBM. Project is part of the Node.js Foundation.
 
 ---
 
@@ -54,6 +57,14 @@ class: center, middle
 # Express Exercises
 
 - `npm i -g expressworks`
+- Hello World!: Build a simple server using Express.
+- Static: Serve Static content.
+- Pug: Using a templating engine.
+- Good Old Form: How to process traditional web form.
+- Stylish CSS: Using middleware for CSS.
+- Param Pam Pam: Using URL parameters.
+- What's in Query: Process URL query.
+- Master Express: Example scenario.
 
 
 ---

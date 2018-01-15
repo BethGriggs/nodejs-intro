@@ -67,5 +67,4 @@ class: center, middle
 - What's in Query: Process URL query.
 - Master Express: Example scenario.
 
-
 ---

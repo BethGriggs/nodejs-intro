@@ -10,6 +10,7 @@ class: center, middle
 1. Using Modules
 2. Built-in Modules
 3. What is Express?
+4. Express exercises
 
 ---
 

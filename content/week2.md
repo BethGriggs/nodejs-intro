@@ -16,7 +16,6 @@ class: center, middle
 # Using Modules
 
  - JavaScript libraries;  set of functions you want to include in your application.
- -
 
 ---
 
@@ -24,6 +23,7 @@ class: center, middle
 
  - Core modules are always preferentially loaded if their identifier is passed to require()
  - Includes: `os`, `assert`, `fs`
+ - https://nodejs.org/docs/latest-v8.x/api/fs.html
 
 ---
 
@@ -55,9 +55,5 @@ class: center, middle
 
 - `npm i -g expressworks`
 
----
-# Express Exercises
-
-- `npm i -g expressworks`
 
 ---

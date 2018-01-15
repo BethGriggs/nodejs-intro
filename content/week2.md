@@ -16,17 +16,25 @@ class: center, middle
 
 # Using Modules
 
- - JavaScript libraries; set of functions you want to include in your application.
- - The module will provide an API to expose functionality.
+ - JavaScript libraries: set of functions you want to include in your application.
+   - The module will provide an API to expose functionality.
+ - Javascript binaries: packages you run from the command line
+   - One or more executables will be added to your path.
+   - Try `npm i -g lolcatjs; lolcatjs --help`
 
 ---
 
 # Built-in Modules
 
- - Node.js provides several built-in modules, which differs between versions.  
+ - Node.js provides several built-in modules, which differ between versions.
  - Core modules are always preferentially loaded if their identifier is passed to `require()`.
- - Includes: `os`, `assert`, `fs`
- - https://nodejs.org/docs/latest-v8.x/api/fs.html
+   - E.g. `require('os')`, `require('assert')`, `require('fs')`
+   - Check out the [Node API docs](https://nodejs.org/docs/latest-v8.x/api/fs.html), they cover all the core modules.
+ - Two ways to require:
+   - `require('foo')` looks for a node core module, then checks `node_modules`
+     folders
+   - `require('./path/to/foo')` looks for a `foo.js` at the specified path.
+   - For more info see [the docs](https://nodejs.org/api/modules.html).
 
 ---
 
@@ -37,7 +45,7 @@ class: center, middle
   - Single-page, multi-page, and hybrid mobile and web apps
   - Common back-end functions for web applications
   - Web APIs (application programming interfaces)
- - Templating engines: Jade and EJS.
+ - Templating engines: Jade, EJS, Handlebars etc.
  - Used in the MEAN/MERN stack.
  - Supports the Model-View-Controller pattern.
  - Free and Open Source.

@@ -47,7 +47,6 @@ class: center, middle
   - Web APIs (application programming interfaces)
  - Templating engines: Jade, EJS, Handlebars etc.
  - Used in the MEAN/MERN stack.
- - Supports the Model-View-Controller pattern.
  - Free and Open Source.
  - Owned by StrongLoop, acquired by IBM. Project is part of the Node.js Foundation.
 
@@ -74,5 +73,14 @@ class: center, middle
 - Param Pam Pam: Using URL parameters.
 - What's in Query: Process URL query.
 - Master Express: Example scenario.
+
+---
+
+# Express Generator
+
+- Generator that generates specific project folder structure.
+- `npm i -g express-generator`
+- `express helloapp`
+
 
 ---

@@ -93,14 +93,14 @@ class: center, middle
 - `npm i -g expressworks`
 - `mkdir express-tutorial`, `cd express-tutorial`, `npm init`
 - Exercises:
-  - Hello World!: Build a simple server using Express.
-  - Static: Serve Static content.
-  - Pug: Using a templating engine.
-  - Good Old Form: How to process traditional web form.
-  - Stylish CSS: Using middleware for CSS.
-  - Param Pam Pam: Using URL parameters.
-  - What's in Query: Process URL query.
-  -  Master Express: Example scenario.
+  - `Hello World!`: Build a simple server using Express.
+  - `Static`: Serve static content.
+  - `Pug`: Using a templating engine.
+  - `Good Old Form`: How to process traditional web form.
+  - `Stylish CSS`: Using middleware for CSS.
+  - `Param Pam Pam`: Using URL parameters.
+  - `What's in Query`: Process URL query.
+  - `Master Express`: Example scenario.
 
 ---
 

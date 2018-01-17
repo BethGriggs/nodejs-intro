@@ -28,7 +28,7 @@ class: center, middle
 - Lists the packages that your project depends on.
 - Allows you to specify the versions of a package that your project can use using [semantic versioning](https://semver.org/) rules.
 - Makes your build reproducible, and therefore much easier to share with other developers.
-- Create one manually or by typing `npm init` in your new project directory
+- Create one manually or by typing `npm init` in your new project directory.
 
 ---
 # package.json
@@ -90,8 +90,8 @@ class: center, middle
 
 # Express Exercises
 
-- `npm i -g expressworks`
-- `mkdir express-tutorial`, `cd express-tutorial`, `npm init`
+- `npm i -g expressworks`, then run interative tutorial with `expressworks`
+- `mkdir express-tutorial; cd express-tutorial; npm init -y`
 - Exercises:
   - `Hello World!`: Build a simple server using Express.
   - `Static`: Serve static content.

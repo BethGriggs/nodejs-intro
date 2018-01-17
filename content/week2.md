@@ -90,7 +90,7 @@ class: center, middle
 
 # Express Exercises
 
-- `npm i -g expressworks`, then run interative tutorial with `expressworks`
+- `npm i -g expressworks`, then run the interactive tutorial with `expressworks`
 - `mkdir express-tutorial; cd express-tutorial; npm init -y`
 - Exercises:
   - `Hello World!`: Build a simple server using Express.

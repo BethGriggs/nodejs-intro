@@ -65,7 +65,7 @@ class: center, middle
 # Express Exercises
 
 - `npm i -g expressworks`
-- `mkdir express-tutorial`, `cd express-tutorial`, `mkdir node_modules`
+- `mkdir express-tutorial`, `cd express-tutorial`, `npm init`
 - Exercises:
   - Hello World!: Build a simple server using Express.
   - Static: Serve Static content.

@@ -23,6 +23,7 @@ class: center, middle
    - Try `npm i -g lolcatjs; lolcatjs --help`
 
 ---
+
 # package.json
 
 - Lists the packages that your project depends on.
@@ -109,3 +110,14 @@ class: center, middle
 - Generator that generates specific project folder structure.
 - `npm i -g express-generator`
 - `express helloapp`
+- `npm install`
+- `npm start`
+- Go to `localhost:3000` in the browser.
+- Try using `nodemon` for hot reload:
+  - `npm install -g nodemon`
+  - `nodemon` (runs your app and reloads it when any of the files change).
+  - Edit `routes/index.js` and change `title: 'Express'` to `title: 'YourName'`
+  - Reload the browser
+- Further reading:
+  - Check out `npm test` [here](https://coderwall.com/p/pcvwuw/working-with-npm-test)
+  - Run `npm help run` to learn more about run scripts.

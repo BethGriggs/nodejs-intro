@@ -109,6 +109,3 @@ class: center, middle
 - Generator that generates specific project folder structure.
 - `npm i -g express-generator`
 - `express helloapp`
-
-
----

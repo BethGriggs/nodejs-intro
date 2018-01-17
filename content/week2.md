@@ -54,11 +54,11 @@ class: center, middle
 
 # Alternatives
 
-- Hapi
-- Koa.js
-- LoopBack
-- Restify
-- Sails.js
+- [Hapi](https://hapijs.com/)
+- [Koa.js](http://koajs.com/)
+- [LoopBack](https://loopback.io/) - Also by StrongLoop/IBM
+- [Restify](http://restify.com/)
+- [Sails.js](https://sailsjs.com/)
 
 ---
 
@@ -67,14 +67,14 @@ class: center, middle
 - `npm i -g expressworks`
 - `mkdir express-tutorial`, `cd express-tutorial`, `mkdir node_modules`
 - Exercises:
- - Hello World!: Build a simple server using Express.
- - Static: Serve Static content.
- - Pug: Using a templating engine.
- - Good Old Form: How to process traditional web form.
- - Stylish CSS: Using middleware for CSS.
- - Param Pam Pam: Using URL parameters.
- - What's in Query: Process URL query.
- - Master Express: Example scenario.
+  - Hello World!: Build a simple server using Express.
+  - Static: Serve Static content.
+  - Pug: Using a templating engine.
+  - Good Old Form: How to process traditional web form.
+  - Stylish CSS: Using middleware for CSS.
+  - Param Pam Pam: Using URL parameters.
+  - What's in Query: Process URL query.
+  -  Master Express: Example scenario.
 
 ---
 

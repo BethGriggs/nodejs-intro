@@ -26,7 +26,7 @@ class: center, middle
 # package.json
 
 - Lists the packages that your project depends on.
-- Allows you to specify the versions of a package that your project can use using semantic versioning rules.
+- Allows you to specify the versions of a package that your project can use using [semantic versioning](https://semver.org/) rules.
 - Makes your build reproducible, and therefore much easier to share with other developers.
 - Create one manually or by typing `npm init` in your new project directory
 

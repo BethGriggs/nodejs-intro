@@ -23,6 +23,32 @@ class: center, middle
    - Try `npm i -g lolcatjs; lolcatjs --help`
 
 ---
+# package.json
+
+- Lists the packages that your project depends on.
+- Allows you to specify the versions of a package that your project can use using semantic versioning rules.
+- Makes your build reproducible, and therefore much easier to share with other developers.
+- Create one manually or by typing `npm init` in your new project directory
+
+---
+# package.json
+
+```
+{
+  "name": "test",
+  "version": "0.0.0",
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5"
+  }
+}
+```
+---
 
 # Built-in Modules
 

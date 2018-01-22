@@ -27,10 +27,10 @@ class: center, middle
 for(var i = 0; i<10; i++) {
   console.log(i) // print values 0-9
 }
-console.log(i)  // will print value 10
+console.log(i) // print value 10
 ```
 
-- Scope of i is not bounded by `{}`
+- Scope of `i` is not bounded by `{}`
 
 ---
 
@@ -39,9 +39,9 @@ console.log(i)  // will print value 10
 ```
 function varKeyword(){
   for(var i = 0; i<10; i++) {
-    console.log(i)
+    console.log(i)  // print values 0-9
   }
-  console.log(i)
+  console.log(i)  // print values 10
 }
 varKeyword();
 ```
@@ -53,14 +53,14 @@ varKeyword();
 ```
 function printing(){
   for(var i = 0; i<10; i++) {
-    console.log(i)
+    console.log(i) // prints values 0-9
   }
 }
 printing()
-console.log(i)
+console.log(i) // undefined
 ```
 
-- undefined, i is only available within the function
+- `i` is only available within the function
 
 ---
 
@@ -69,12 +69,13 @@ console.log(i)
 ```
 (function (){
   for(var i = 0; i<10; i++) {
-    console.log(i)
+    console.log(i) // prints values 0-9
   }
 })()
 ```
 
-- Attempt to keep variables in scope to the functions, this is usually called immediately invoked function expression.
+- Used to keep variables in scope to the functions.
+- Sometimes called an immediately invoked function expression.
 
 ---
 
@@ -82,60 +83,77 @@ console.log(i)
 
 ```
 for(let i = 0; i<10; i++) {
-  console.log(i)
+  console.log(i) // prints values 0-9
 }
-console.log(i)
+console.log(i) // undefined
 ```
 
-- Its the solution to the madness in the var variables. These variables are scoped in the braces {}.
+- `let` variables are scoped in the braces `{}`.
 - It will print 0–9 then throw a reference error as i is not in scope outside the braces.
 
 ---
 
-# const keyword
+# variable shadowing
 
 ```
-const multiplier = 3.4
-discount = 5.6 // this will throw an error
-[23, 56, 67].map((num)=> num * discount)
+var i;
+i = 34;
+for(let i =0; i<10; i++) {
+ console.log(i) // prints 0-9
+}
+console.log(i) // prints 34
 ```
-
-- means that once the variable is assigned it cannot be assigned again and an attempt to do so will throw an error.
 
 ---
 
 # const keyword
 
 ```
-const dog={
-  age: 3
+const number = 42;
+
+try {
+  number = 99;
+} catch(err) {
+  console.log(err);
 }
-dog.age = 5
-dog = { name: 'biko'}
+
+console.log(number); // expected output: 42
+```
+
+- Once the variable is assigned it cannot be assigned again, and an attempt to do so will throw an error.
+
+---
+
+# const keyword
+
+```
+const dog = {
+  age: 3
+};
+dog.age = 5;
+dog = { name: 'biko'};
 ```
 
 - `const` does not make the variable immutable, `dog.age` will change.
 - The `dog = { name: 'biko' }` will throw an error as the dog cannot be assigned to another variable.  
 
 ---
-# variable shadowing
-
-```
-var i
-i = 34
-for(let i =0; i<4; i++){
- console.log(i)
-}
-console.log(i)
-```
-
----
 
 # Callbacks
 
+
 ```
-downloadFile('example.com/weather.json', function(err, data) {  
+getData('example.com/weather.json', function(err, data) {  
     console.log('Got weather data:', data);
+});
+```
+
+```
+getData('example.com/data.json', function(err, data) {  
+    console.log('Got data:', data);
+    getMoreData('example.com/moreData.json', function(err, data) {  
+      console.log('Got more data:', data);
+    });
 });
 ```
 
@@ -159,7 +177,26 @@ getData(function(a){
 
 ---
 
-# How to avoid Callback Hell
+# How to avoid callback Hell - 1
+
+```
+var fs = require('fs');
+
+var myFile = '/tmp/test';  
+fs.readFile(myFile, 'utf8', function(err, txt) {  
+    if (err) return console.log(err);
+
+    txt = txt + '\nAppended something!';
+    fs.writeFile(myFile, txt, function(err) {
+        if(err) return console.log(err);
+        console.log('Appended text!');
+    });
+});
+```
+
+---
+
+# How to avoid callback hell - 2
 
 ```
 var fs = require('fs');
@@ -182,7 +219,27 @@ fs.readFile(myFile, 'utf8', appendText);
 
 ---
 
-# Promises
+# Promises - Bluebird
+
+```
+var Promise = require('bluebird');  
+var fs = require('fs');  
+Promise.promisifyAll(fs);
+
+var myFile = '/tmp/test';  
+fs.readFileAsync(myFile, 'utf8').then(function(txt) {  
+    txt = txt + '\nAppended something!';
+    fs.writeFile(myFile, txt);
+}).then(function() {
+    console.log('Appended text!');
+}).catch(function(err) {
+    console.log(err);
+});
+```
+
+---
+
+# Promises - Create your own
 
 ```
 var p = new Promise(function(resolve, reject) {
@@ -210,6 +267,7 @@ p.then(function() {
 
 - `npm install -g promise-it-wont-hurt`
 
+---
 
 # Async/Await
 
@@ -230,4 +288,5 @@ async function asyncCall() {
 }
 
 asyncCall();
+
 ```

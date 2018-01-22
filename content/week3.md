@@ -16,9 +16,9 @@ class: center, middle
 
 # Scoping
 
-- `var`
-- `const`
-- `let`
+- Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime.
+- Three scopes in JavaScript: `var`, `let`, and `const`.
+
 ---
 
 # var keyword

@@ -237,6 +237,8 @@ fs.readFileAsync(myFile, 'utf8').then(function(txt) {
 });
 ```
 
+
+- `mkdir promise; cd promise; npm init -y; npm i --save bluebird`
 ---
 
 # Promises - Create your own

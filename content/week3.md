@@ -206,6 +206,11 @@ p.then(function() {
 
 ---
 
+# Promise tutorial
+
+- `npm install -g promise-it-wont-hurt`
+
+
 # Async/Await
 
 ```

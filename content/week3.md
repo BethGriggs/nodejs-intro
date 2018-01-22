@@ -64,7 +64,7 @@ console.log(i)
 
 ---
 
-# var keyword
+# var keyword - closures
 
 ```
 (function (){
@@ -92,7 +92,6 @@ console.log(i)
 
 ---
 
-
 # const keyword
 
 ```
@@ -105,10 +104,125 @@ discount = 5.6 // this will throw an error
 
 ---
 
-# Callbacks
+# const keyword
 
-- Callbacks
-- Promises
-- Async Await
+```
+const dog={
+  age: 3
+}
+dog.age = 5
+dog = { name: 'biko'}
+```
+
+- `const` does not make the variable immutable, `dog.age` will change.
+- The `dog = { name: 'biko' }` will throw an error as the dog cannot be assigned to another variable.  
 
 ---
+# variable shadowing
+
+```
+var i
+i = 34
+for(let i =0; i<4; i++){
+ console.log(i)
+}
+console.log(i)
+```
+
+---
+
+# Callbacks
+
+```
+downloadFile('example.com/weather.json', function(err, data) {  
+    console.log('Got weather data:', data);
+});
+```
+
+---
+
+# Callback Hell / Pyramid of Doom
+
+```
+getData(function(a){  
+    getMoreData(a, function(b){
+        getMoreData(b, function(c){
+            getMoreData(c, function(d){
+                getMoreData(d, function(e){
+                    ...
+                });
+            });
+        });
+    });
+});
+```
+
+---
+
+# How to avoid Callback Hell
+
+```
+var fs = require('fs');
+
+function notifyUser(err) {  
+    if(err) return console.log(err);
+    console.log('Appended text!');
+};
+
+function appendText(err, txt) {  
+    if (err) return console.log(err);
+
+    txt = txt + '\nAppended something!';
+    fs.writeFile(myFile, txt, notifyUser);
+}
+
+var myFile = '/tmp/test';  
+fs.readFile(myFile, 'utf8', appendText);  
+```
+
+---
+
+# Promises
+
+```
+var p = new Promise(function(resolve, reject) {
+
+	// Do an async task async task and then...
+
+	if(/* good condition */) {
+		resolve('Success!');
+	}
+	else {
+		reject('Failure!');
+	}
+});
+
+p.then(function() {
+	/* do something with the result */
+}).catch(function() {
+	/* error :( */
+})
+```
+
+---
+
+# Async/Await
+
+```
+function resolveAfter2Seconds() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve('resolved');
+    }, 2000);
+  });
+}
+
+async function asyncCall() {
+  console.log('calling');
+  var result = await resolveAfter2Seconds();
+  console.log(result);
+  // expected output: "resolved"
+}
+
+asyncCall();
+```

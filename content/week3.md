@@ -19,6 +19,7 @@ class: center, middle
 - Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime.
 - Three scopes in JavaScript: `var`, `let`, and `const`.
 - For each of the following examples I recommend creating a file e.g. `scoping.js` and executing the code with `node scoping.js`.
+- Alternatively, use the Node.JS REPL - access it by typing `node` in your terminal. 
 ---
 
 # var keyword
@@ -272,6 +273,8 @@ fs.readFileAsync(myFile, 'utf8').then(function(txt) {
 
 
 - `mkdir promise; cd promise; npm init -y; npm i --save bluebird`
+
+---
 
 # Promise tutorial
 

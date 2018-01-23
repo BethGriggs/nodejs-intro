@@ -71,11 +71,20 @@ console.log(i) // undefined
 # var keyword - closures
 
 ```
+for(var i = 0; i<10; i++) {
+  console.log(i) // print values 0-9
+}
+```
+
+```
 (function (){
   for(var i = 0; i<10; i++) {
     console.log(i) // prints values 0-9
   }
+
 })()
+
+console.log(i) // prints undefined
 ```
 
 - Used to keep variables in scope to only the function.

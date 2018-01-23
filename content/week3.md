@@ -192,7 +192,7 @@ getData(function(a){
 
 ---
 
-# How to avoid callback Hell - 1
+# How to avoid callback Hell - Example
 
 ```
 const fs = require('fs');
@@ -210,7 +210,7 @@ fs.readFile(myFile, 'utf8', function(err, txt) {
 
 ---
 
-# How to avoid callback hell - 2
+# How to avoid callback hell - Improvement
 
 ```
 const fs = require('fs');

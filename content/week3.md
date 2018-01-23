@@ -18,7 +18,7 @@ class: center, middle
 
 - Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime.
 - Three scopes in JavaScript: `var`, `let`, and `const`.
-
+- For each of the following examples I recommend creating a file e.g. `scoping.js` and executing the code with `node scoping.js`.
 ---
 
 # var keyword
@@ -30,7 +30,7 @@ for(var i = 0; i<10; i++) {
 console.log(i) // print value 10
 ```
 
-- Scope of `i` is not bounded by `{}`
+- Scope of `i` is not bounded by `{}`.
 
 ---
 
@@ -46,6 +46,8 @@ function varKeyword(){
 varKeyword();
 ```
 
+- Same output as previous example.
+
 ---
 
 # var keyword
@@ -60,8 +62,7 @@ printing()
 console.log(i) // undefined
 ```
 
-- `i` is only available within the function
-
+- `i` is only available within the function.
 ---
 
 # var keyword - closures
@@ -74,7 +75,7 @@ console.log(i) // undefined
 })()
 ```
 
-- Used to keep variables in scope to the functions.
+- Used to keep variables in scope to only the function.
 - Sometimes called an immediately invoked function expression.
 
 ---
@@ -103,6 +104,8 @@ for(let i =0; i<10; i++) {
 }
 console.log(i) // prints 34
 ```
+
+- In this example `var i` has been shadowed by `let i` in the for loop.
 
 ---
 
@@ -135,7 +138,7 @@ dog = { name: 'biko'};
 ```
 
 - `const` does not make the variable immutable, `dog.age` will change.
-- The `dog = { name: 'biko' }` will throw an error as the dog cannot be assigned to another variable.  
+- The `dog = { name: 'biko' }` will throw an error as `dog` cannot be assigned to another object.  
 
 ---
 
@@ -180,12 +183,11 @@ getData(function(a){
 # How to avoid callback Hell - 1
 
 ```
-var fs = require('fs');
+const fs = require('fs');
 
-var myFile = '/tmp/test';  
+const myFile = '/tmp/test';  
 fs.readFile(myFile, 'utf8', function(err, txt) {  
     if (err) return console.log(err);
-
     txt = txt + '\nAppended something!';
     fs.writeFile(myFile, txt, function(err) {
         if(err) return console.log(err);
@@ -199,7 +201,7 @@ fs.readFile(myFile, 'utf8', function(err, txt) {
 # How to avoid callback hell - 2
 
 ```
-var fs = require('fs');
+const fs = require('fs');
 
 function notifyUser(err) {  
     if(err) return console.log(err);
@@ -208,43 +210,26 @@ function notifyUser(err) {
 
 function appendText(err, txt) {  
     if (err) return console.log(err);
-
     txt = txt + '\nAppended something!';
     fs.writeFile(myFile, txt, notifyUser);
 }
 
-var myFile = '/tmp/test';  
+const myFile = '/tmp/test';  
 fs.readFile(myFile, 'utf8', appendText);  
 ```
 
 ---
 
-# Promises - Bluebird
-
-```
-var Promise = require('bluebird');  
-var fs = require('fs');  
-Promise.promisifyAll(fs);
-
-var myFile = '/tmp/test';  
-fs.readFileAsync(myFile, 'utf8').then(function(txt) {  
-    txt = txt + '\nAppended something!';
-    fs.writeFile(myFile, txt);
-}).then(function() {
-    console.log('Appended text!');
-}).catch(function(err) {
-    console.log(err);
-});
-```
-
-
-- `mkdir promise; cd promise; npm init -y; npm i --save bluebird`
----
-
 # Promises - Create your own
 
+- A promise is an object which can be returned synchronously from an asynchronous function.
+- A promise will be in one of 3 possible states:
+ - Fulfilled: onFulfilled() will be called (e.g., resolve() was called)
+ - Rejected: onRejected() will be called (e.g., reject() was called)
+ - Pending: not yet fulfilled or rejected
+
 ```
-var p = new Promise(function(resolve, reject) {
+let p = new Promise(function(resolve, reject) {
 
 	// Do an async task async task and then...
 
@@ -265,6 +250,29 @@ p.then(function() {
 
 ---
 
+# Promises - Bluebird
+
+- The module bluebird can 'promisify' built in module functions.
+
+```
+const Promise = require('bluebird');  
+const fs = require('fs');  
+Promise.promisifyAll(fs);
+
+const myFile = '/tmp/test';  
+fs.readFileAsync(myFile, 'utf8').then(function(txt) {  
+    txt = txt + '\nAppended something!';
+    fs.writeFile(myFile, txt);
+}).then(function() {
+    console.log('Appended text!');
+}).catch(function(err) {
+    console.log(err);
+});
+```
+
+
+- `mkdir promise; cd promise; npm init -y; npm i --save bluebird`
+
 # Promise tutorial
 
 - `npm install -g promise-it-wont-hurt`
@@ -273,6 +281,15 @@ p.then(function() {
 
 # Async/Await
 
+- Async/await is a new way to write asynchronous code as an alternative to callbacks and promsies.
+- Built on top of promises.
+- It cannot be used with plain callbacks.
+- Async/await is, like promises, non-blocking.
+- Makes asynchronous code look and behave a little more like synchronous code.
+- Note: Node 7.6.0 and above only. 
+---
+
+# Async/await example
 ```
 function resolveAfter2Seconds() {
   return new Promise(resolve => {

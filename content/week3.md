@@ -10,7 +10,7 @@ class: center, middle
 - Scoping
 - Callbacks
 - Promises
-- Async Await
+- Async/Await
 
 ---
 
@@ -19,7 +19,8 @@ class: center, middle
 - Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime.
 - Three scopes in JavaScript: `var`, `let`, and `const`.
 - For each of the following examples I recommend creating a file e.g. `scoping.js` and executing the code with `node scoping.js`.
-- Alternatively, use the Node.JS REPL - access it by typing `node` in your terminal. 
+- Alternatively, use the Node.JS REPL - access it by typing `node` in your terminal.
+
 ---
 
 # var keyword
@@ -64,6 +65,7 @@ console.log(i) // undefined
 ```
 
 - `i` is only available within the function.
+
 ---
 
 # var keyword - closures
@@ -98,15 +100,14 @@ console.log(i) // undefined
 # variable shadowing
 
 ```
-var i;
-i = 34;
-for(let i =0; i<10; i++) {
+let i = 34;
+for(let i = 0; i<10; i++) {
  console.log(i) // prints 0-9
 }
 console.log(i) // prints 34
 ```
 
-- In this example `var i` has been shadowed by `let i` in the for loop.
+- In this example `let i = 34` has been shadowed by `let i = 0` in the for loop.
 
 ---
 

@@ -281,15 +281,16 @@ fs.readFileAsync(myFile, 'utf8').then(function(txt) {
 
 # Async/Await
 
-- Async/await is a new way to write asynchronous code as an alternative to callbacks and promsies.
+- Async/await is a new way to write asynchronous code as an alternative to callbacks and promises.
 - Built on top of promises.
 - It cannot be used with plain callbacks.
 - Async/await is, like promises, non-blocking.
 - Makes asynchronous code look and behave a little more like synchronous code.
-- Note: Node 7.6.0 and above only. 
+- Note: Node 7.6.0 and above only.
 ---
 
 # Async/await example
+
 ```
 function resolveAfter2Seconds() {
   return new Promise(resolve => {

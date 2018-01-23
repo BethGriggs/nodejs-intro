@@ -135,6 +135,7 @@ console.log(number); // expected output: 42
 ```
 
 - Once the variable is assigned it cannot be assigned again, and an attempt to do so will throw an error.
+- Always have a reference to the same object or primitive value.
 
 ---
 
